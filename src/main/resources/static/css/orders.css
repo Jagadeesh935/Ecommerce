@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navitem {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navitem:hover {
+    color: #f39c12;
+}
+
+.profilepicture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f39c12;
+    transition: transform 0.3s ease;
+}
+
+.profilepicture img:hover {
+    transform: scale(1.1);
+}
+
+#navbar .navitem:last-child {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+
+/* Order Body */
+#orderbody {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderbody h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+#orderbody p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+}
+
+/* Order List */
+.orderlist {
+    display: grid;
+    gap: 20px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    color: #555;
+    text-align: center;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Cancel Order Button Container */
+.cancel {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Cancel Order Button */
+.cancel button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e74c3c; /* Red for cancel action */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+.cancel button:active {
+    background-color: #a93226; /* Even darker red for active state */
+    transform: scale(1);
+}
+
+.cancel button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(231, 76, 60, 0.5);
+}
+
+
+
+
+
+
+
+.orderid,
+.date,
+.total,
+.status {
+    text-align: center;
+    font-size: 1rem;
+    color: #444;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.itemname {
+    font-weight: bold;
+    color: #333;
+}
+
+.itemquantity {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Status Colors */
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.status.Delivered {
+    color: #27ae60;
+    background-color: #e9f7ef;
+}
+
+.status.Pending {
+    color: #d35400;
+    background-color: #fdebd0;
+}

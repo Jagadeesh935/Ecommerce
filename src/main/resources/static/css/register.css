@@ -1,0 +1,72 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    border: 2px solid blue
+}
+
+form > .title {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form > .field {
+    display: flex;
+    padding: 0px 20px;
+}
+
+form > .field > label {
+    min-width: 15em;
+    font-size: 1.3em;
+}
+
+form > .field > input,
+form > .field > select {
+    font-size: 1.2em;
+    padding: 5px;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button {
+    font-size: 1.3em;
+    width: 5em;
+    height: 1.5em;
+    border: 0px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    margin-bottom: 20px;
+}
+
+.buttons button:hover {
+    background-color: rgb(49, 49, 216);
+}
+
+.buttons button:active {
+    scale: 0.9;
+}

@@ -1,0 +1,40 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore Maven & Gradle directories
+/.mvn/
+/target/
+/.gradle/
+/build/
+
+# Ignore temporary and log files
+*.log
+*.tmp
+*.out
+*.pid
+*.swp
+
+# Ignore IDE-specific files
+/.idea/
+/.vscode/
+*.iml
+*.iws
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Java JAR/WAR/EAR files
+*.jar
+*.war
+*.ear
+
+
+
+# Ignore dependency lock files (if not tracked)
+dependency-reduced-pom.xml
+
+# Ignore generated files from package management
+/.settings/
+/.classpath
+/.project

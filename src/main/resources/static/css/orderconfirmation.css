@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navitem {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.navitem:hover {
+    color: #f39c12;
+}
+
+.profilepicture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Order Confirmation Body */
+#orderConfirmationBody {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderConfirmationBody h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section Headings */
+#orderConfirmationBody h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.productsummarytitle {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.dataitems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataitems > .item{
+    width: 10em;
+    text-align: right;
+}
+
+.dataitems > .item:first-child{
+    text-align: left;
+}
+
+
+/* Order Summary and Details */
+.orderSummary, .billingAddress, .deliveryMethod, .paymentDetails {
+    margin-bottom: 20px;
+}
+
+.summaryDetails, .billingAddress p, .deliveryMethod p, .paymentDetails p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.summaryDetails strong, .billingAddress strong, .deliveryMethod strong, .paymentDetails strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Confirmation Buttons */
+.confirmationButtons > form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.confirmationButtons button {
+    width: 48%;
+}

@@ -1,0 +1,147 @@
+/* Reset some default browser styles */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Overall body styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navbar styling */
+#navbar {
+    width: 100%;
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.navitem {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navitem:hover {
+    color: #ffcc00;
+}
+
+.profilepicture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+form h1 {
+    text-align: center;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.field input[type="text"], 
+.field input[type="number"], 
+.field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.field input[type="file"] {
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+#highlightinputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#highlightinputs input {
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.field button {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.field button:hover {
+    background-color: #005bb5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.buttons input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.buttons input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.buttons input[type="reset"]:hover {
+    background-color: #c82333;
+}

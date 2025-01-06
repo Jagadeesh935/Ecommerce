@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.box{
+    display: flex;
+    width: 60em;
+    height: 32em;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0px 20px 40px grey;
+}
+
+.box > * {
+    flex-basis: 50%;
+    padding: 3em;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input {
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(238, 237, 237);
+    border: 0px;
+    outline: none;
+}
+
+.loginbutton {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.loginbutton:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(4, 4, 178);
+}
+
+.loginbutton:active {
+    transition-duration: 0.2s;
+    background-color: rgb(3, 3, 95);
+}
+
+.forgot {
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #FF475D;
+    color: white;
+}
+
+.welcomeback {
+    font-size: 2.5em;
+}
+
+.signup {
+    padding: 10px;
+    border-radius: 20px;
+    width: 8em;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.signup:hover{
+    transition-duration: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.error {
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+}
