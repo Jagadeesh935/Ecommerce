@@ -46,12 +46,13 @@ public class User {
 
     @NotBlank(message = "District is required")
     private String district;
-	
-	
-	public User(long id, @NotBlank String username, @NotBlank @Size(min = 6) String password,
-			@NotBlank @Size(min = 10, max = 10) String mobile, @NotBlank String door, @NotBlank String street,
-			@NotBlank String city, @NotBlank String country, @NotBlank String state, @NotBlank String district) {
-		super();
+
+	private String roles;
+
+	public User() {
+	}
+
+	public User(long id, String username, String password, String mobile, String door, String street, String city, String country, String state, String district, String roles) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
@@ -62,76 +63,111 @@ public class User {
 		this.country = country;
 		this.state = state;
 		this.district = district;
+		this.roles = roles;
 	}
-	public User() {
-		super();
-	}
+
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getUsername() {
+
+	public @NotBlank(message = "Username is required") String getUsername() {
 		return username;
 	}
-	public void setUsername(String username) {
+
+	public void setUsername(@NotBlank(message = "Username is required") String username) {
 		this.username = username;
 	}
-	public String getPassword() {
+
+	public @NotBlank(message = "Password must be at least 6 characters") @Size(min = 6) String getPassword() {
 		return password;
 	}
-	public void setPassword(String password) {
+
+	public void setPassword(@NotBlank(message = "Password must be at least 6 characters") @Size(min = 6) String password) {
 		this.password = password;
 	}
-	public String getMobile() {
+
+	public @NotBlank(message = "Mobile must be 10 digits") @Size(min = 10, max = 10) String getMobile() {
 		return mobile;
 	}
-	public void setMobile(String mobile) {
+
+	public void setMobile(@NotBlank(message = "Mobile must be 10 digits") @Size(min = 10, max = 10) String mobile) {
 		this.mobile = mobile;
 	}
-	public String getDoor() {
+
+	public @NotBlank(message = "Door is required") String getDoor() {
 		return door;
 	}
-	public void setDoor(String door) {
+
+	public void setDoor(@NotBlank(message = "Door is required") String door) {
 		this.door = door;
 	}
-	public String getStreet() {
+
+	public @NotBlank(message = "Street is required") String getStreet() {
 		return street;
 	}
-	public void setStreet(String street) {
+
+	public void setStreet(@NotBlank(message = "Street is required") String street) {
 		this.street = street;
 	}
-	public String getCity() {
+
+	public @NotBlank(message = "City is required") String getCity() {
 		return city;
 	}
-	public void setCity(String city) {
+
+	public void setCity(@NotBlank(message = "City is required") String city) {
 		this.city = city;
 	}
-	public String getCountry() {
+
+	public @NotBlank(message = "Country is required") String getCountry() {
 		return country;
 	}
-	public void setCountry(String country) {
+
+	public void setCountry(@NotBlank(message = "Country is required") String country) {
 		this.country = country;
 	}
-	public String getState() {
+
+	public @NotBlank(message = "State is required") String getState() {
 		return state;
 	}
-	public void setState(String state) {
+
+	public void setState(@NotBlank(message = "State is required") String state) {
 		this.state = state;
 	}
-	public String getDistrict() {
+
+	public @NotBlank(message = "District is required") String getDistrict() {
 		return district;
 	}
-	public void setDistrict(String district) {
+
+	public void setDistrict(@NotBlank(message = "District is required") String district) {
 		this.district = district;
 	}
+
+	public String getRoles() {
+		return roles;
+	}
+
+	public void setRoles(String roles) {
+		this.roles = roles;
+	}
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", mobile=" + mobile + ", door="
-				+ door + ", street=" + street + ", city=" + city + ", country=" + country + ", state=" + state
-				+ ", district=" + district + "]";
+		return "User{" +
+				"id=" + id +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", mobile='" + mobile + '\'' +
+				", door='" + door + '\'' +
+				", street='" + street + '\'' +
+				", city='" + city + '\'' +
+				", country='" + country + '\'' +
+				", state='" + state + '\'' +
+				", district='" + district + '\'' +
+				", roles='" + roles + '\'' +
+				'}';
 	}
-	
-	
 }
